@@ -3,11 +3,9 @@ package com.ventura.tournamentbracketslib;
 import android.os.Bundle;
 import androidx.fragment.app.FragmentActivity;
 import com.ventura.bracketslib.BracketsView;
-/* replace these :
-import com.ventura.bracketslib.ColomnData;
-import com.ventura.bracketslib.CompetitorData;
-import com.ventura.bracketslib.MatchData;
-*/
+import com.ventura.bracketslib.model.ColomnData;
+import com.ventura.bracketslib.model.CompetitorData;
+import com.ventura.bracketslib.model.MatchData;
 import java.util.Arrays;
 
 public class MainActivity extends FragmentActivity {
@@ -28,9 +26,8 @@ public class MainActivity extends FragmentActivity {
     }
 
 
-    private <CompetitorData> void initialiseBracketsView() {
+    private void initialiseBracketsView() {
         BracketsView bracketsView = findViewById(R.id.bracket_view);
-/* Update these for new methods
         CompetitorData brazilSemiFinal = new CompetitorData("Brazil", "3");
         CompetitorData englandSemiFinal = new CompetitorData("England", "1");
         CompetitorData argentinaSemiFinal = new CompetitorData("Argentina", "3");
@@ -46,6 +43,5 @@ public class MainActivity extends FragmentActivity {
         ColomnData finalColomn = new ColomnData(Arrays.asList(match3Final));
 
         bracketsView.setBracketsData(Arrays.asList(semiFinalColomn, finalColomn));
-        */
     }
 }
