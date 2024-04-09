@@ -1,3 +1,5 @@
+# COMP 312
+- Morgan, Laura, Nancy
 # TournamentBracketLib
 A library to generate tournament brackets with smooth transition and animations.
 
