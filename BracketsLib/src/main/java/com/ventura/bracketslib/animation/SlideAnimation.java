@@ -25,7 +25,7 @@ public class SlideAnimation extends Animation {
         int newHeight;
 
         if (mView.getHeight() != mToHeight) {
-            newHeight = (int) (mFromHeight + ((mToHeight - mFromHeight) * interpolatedTime));
+            newHeight = (int) (mFromHeight + ((mToHeight - mFromHeight) * interpolatedTime)); //This is what causes the animation to work when sliding through the app
             mView.getLayoutParams().height = newHeight;
             mView.requestLayout();
         }
