@@ -58,7 +58,7 @@ public class BracketsCellAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             public void run() {
                 viewHolder.setAnimation(list.get(position).getHeight());
             }
-        }, 100);
+        }, 50); //makes the time to do the animation quicker
 
         viewHolder.getTeamOneName().setText(list.get(position).getCompetitorOne().getName());
         viewHolder.getTeamTwoName().setText(list.get(position).getCompetitorTwo().getName());
