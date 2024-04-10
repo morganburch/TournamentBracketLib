@@ -81,15 +81,15 @@ public class BracketsColomnFragment extends Fragment {
     private void setInitialHeightForList() {
         for (MatchData data : list){
             if (sectionNumber == 0){
-                data.setHeight(dpToPx(131));
+                data.setHeight(dpToPx(145)); //131
             }else if (sectionNumber == 1 && previousBracketSize != list.size()){
-                data.setHeight(dpToPx(262));
+                data.setHeight(dpToPx(290)); //262 is the one in the middle
             }else if (sectionNumber == 1 && previousBracketSize == list.size()) {
-                data.setHeight(dpToPx(131));
+                data.setHeight(dpToPx(145));//131
             } else if (previousBracketSize > list.size()) {
-                data.setHeight(dpToPx(262));
+                data.setHeight(dpToPx(262)); //262
             }else if (previousBracketSize == list.size()) {
-                data.setHeight(dpToPx(131));
+                data.setHeight(dpToPx(131)); //131
             }
         }
 
