@@ -10,11 +10,11 @@
         android:layout_height="match_parent"/>
 
     <com.ventura.bracketslib.BracketsView
-        android:id="@+id/bracket_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:bracketBackgroundColor="#1c222e"
-        app:bracketColor="#262e40"
-        app:bracketTextColor="#fff" />
+            android:id="@+id/bracket_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:bracketBackgroundColor="#F3F7FF"
+            app:bracketColor="#469FFF"
+            app:bracketTextColor="#000000"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
