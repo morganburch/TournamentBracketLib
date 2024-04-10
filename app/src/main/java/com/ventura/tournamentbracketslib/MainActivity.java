@@ -28,6 +28,7 @@ public class MainActivity extends FragmentActivity {
 
     private void initialiseBracketsView() {
         BracketsView bracketsView = findViewById(R.id.bracket_view);
+
         CompetitorData brazilSemiFinal = new CompetitorData("Brazil", "3");
         CompetitorData englandSemiFinal = new CompetitorData("England", "1");
         CompetitorData argentinaSemiFinal = new CompetitorData("Argentina", "3");
@@ -43,5 +44,6 @@ public class MainActivity extends FragmentActivity {
         ColomnData finalColomn = new ColomnData(Arrays.asList(match3Final));
 
         bracketsView.setBracketsData(Arrays.asList(semiFinalColomn, finalColomn));
+        //Don't know why but when this line is uncommented it makes the program unable to launch on the phone
     }
 }
