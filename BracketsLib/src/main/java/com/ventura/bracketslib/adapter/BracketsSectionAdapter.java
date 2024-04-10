@@ -36,7 +36,7 @@ public class BracketsSectionAdapter extends FragmentStatePagerAdapter {
         BracketsColomnFragment fragment = new BracketsColomnFragment(bracketColor, textColor);
         bundle.putInt("section_number", position);
         if (position > 0)
-            bundle.putInt("previous_section_size", sectionList.get(position - 1).getMatches().size());
+            bundle.putInt("previous_section_size", sectionList.get(position - 1).getMatches().size()); //position - 1 makes it so that the next column is one down
         else if (position == 0)
             bundle.putInt("previous_section_size", sectionList.get(position).getMatches().size());
         fragment.setArguments(bundle);
