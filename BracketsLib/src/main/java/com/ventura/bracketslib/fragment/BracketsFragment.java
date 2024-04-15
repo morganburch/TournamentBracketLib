@@ -100,7 +100,7 @@ public class BracketsFragment extends Fragment implements ViewPager.OnPageChange
                     mNextSelectedScreen = position + 1;
                     //update view here
                     if (getBracketsFragment(position).getColomnList().get(0).getHeight()
-                            != dpToPx(131))
+                            != dpToPx(131))//131
                         getBracketsFragment(position).shrinkView(dpToPx(131));
                     if (getBracketsFragment(position + 1).getColomnList().get(0).getHeight()
                             != dpToPx(131))
