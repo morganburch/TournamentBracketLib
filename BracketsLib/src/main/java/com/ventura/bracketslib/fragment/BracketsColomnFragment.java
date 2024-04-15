@@ -89,7 +89,7 @@ public class BracketsColomnFragment extends Fragment {
             } else if (previousBracketSize > list.size()) {
                 data.setHeight(dpToPx(262)); //262
             }else if (previousBracketSize == list.size()) {
-                data.setHeight(dpToPx(131)); //131
+                data.setHeight(dpToPx(145)); //131
             }
         }
 
