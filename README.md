@@ -1,5 +1,9 @@
 # COMP 312 - Open Source Project
 Team Members: Morgan Burch, Laura Gerardo, Nancy Rojas
+Progress
+- Updated competitor, column, and matchData classes
+- Changed UI
+- Arranged Bracket Boxes Positioning from overlapping & Animation speed
 
 # TournamentBracketLib
 A library to generate tournament brackets with smooth transition and animations.
