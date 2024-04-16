@@ -1,5 +1,6 @@
 # COMP 312 - Open Source Project
-- Morgan, Laura, Nancy
+Team Members: Morgan Burch, Laura Gerardo, Nancy Rojas
+
 # TournamentBracketLib
 A library to generate tournament brackets with smooth transition and animations.
 
