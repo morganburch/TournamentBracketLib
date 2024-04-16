@@ -5,9 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:text="Hello world"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+            android:text="Hello world"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/textView2"/>
 
     <com.ventura.bracketslib.BracketsView
             android:id="@+id/bracket_view"
@@ -15,6 +15,14 @@
             android:layout_height="match_parent"
             app:bracketBackgroundColor="#F3F7FF"
             app:bracketColor="#469FFF"
-            app:bracketTextColor="#000000"/>
+            app:bracketTextColor="#000000">
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="ENTERNAME"
+                android:ems="10"
+                android:id="@+id/editTextText" android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    </com.ventura.bracketslib.BracketsView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
