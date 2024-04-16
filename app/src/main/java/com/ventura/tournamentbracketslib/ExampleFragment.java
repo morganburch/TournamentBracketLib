@@ -28,8 +28,9 @@ public class ExampleFragment extends Fragment {
         // Call the function to set the brackets data
         //setBracketsDataPokemon(bracketsView);
         //setBracketsDataResturant(bracketsView);
-        //setBracketsDataTemplate(bracketsView);
-        setBracketsDataSonnyAngels(bracketsView);
+        //setBracketsDataSonnyAngels(bracketsView);
+        setBracketsDataTemplate(bracketsView);
+
     }
 
     private void setBracketsDataPokemon(BracketsView bracketsView) {
