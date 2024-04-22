@@ -22,5 +22,5 @@ public class ColomnData implements Serializable{
 
     public List<MatchData> getMatches() {
         return matches;
-    }
+    } //make unmodifiable using collections?
 }

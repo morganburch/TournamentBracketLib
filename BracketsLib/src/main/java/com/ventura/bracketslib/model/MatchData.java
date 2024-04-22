@@ -41,4 +41,14 @@ public class MatchData implements Serializable{
     public void setCompetitorOne(CompetitorData competitorOne) {
         this.competitorOne = competitorOne;
     }
+
+    @Override
+    public String toString() {
+        return "MatchData{" +
+                "competitorOne=" + competitorOne +
+                ", competitorTwo=" + competitorTwo +
+                ", height=" + height +
+                '}';
+    }
 }
+

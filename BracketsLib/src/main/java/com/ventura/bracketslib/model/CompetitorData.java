@@ -9,14 +9,14 @@ import java.io.Serializable;
 public class CompetitorData implements Serializable{
 
     private String name;
-    private String score;
+    private String score; //Should this be int? dont want to change before presentation but something to consider
 
-    public CompetitorData(String name, String score){
+    public CompetitorData(String name, String score){ //int score?
         this.name = name;
         this.score = score;
     }
 
-    public String getScore() {
+    public String getScore() { //int getScore?
         return score;
     }
 
@@ -30,5 +30,13 @@ public class CompetitorData implements Serializable{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "CompetitorData{" +
+                "name='" + name + '\'' +
+                ", score=" + score +
+                '}';
     }
 }
