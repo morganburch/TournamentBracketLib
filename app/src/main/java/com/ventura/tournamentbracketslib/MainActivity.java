@@ -25,7 +25,6 @@ public class MainActivity extends FragmentActivity {
         initialiseBracketsView();
     }
 
-
     private void initialiseBracketsView() {
         BracketsView bracketsView = findViewById(R.id.bracket_view);
 
@@ -40,10 +39,10 @@ public class MainActivity extends FragmentActivity {
         MatchData match2SemiFinal = new MatchData(argentinaSemiFinal, russiaSemiFinal);
         MatchData match3Final = new MatchData(brazilFinal, argentinaFinal);
 
-        ColomnData semiFinalColomn = new ColomnData(Arrays.asList(match1SemiFinal, match2SemiFinal));
-        ColomnData finalColomn = new ColomnData(Arrays.asList(match3Final));
+        ColomnData semiFinalColumn = new ColomnData(Arrays.asList(match1SemiFinal, match2SemiFinal));
+        ColomnData finalColumn = new ColomnData(Arrays.asList(match3Final));
 
-        bracketsView.setBracketsData(Arrays.asList(semiFinalColomn, finalColomn));
+        bracketsView.setBracketsData(Arrays.asList(semiFinalColumn, finalColumn));
         //Don't know why but when this line is uncommented it makes the program unable to launch on the phone
     }
 }
