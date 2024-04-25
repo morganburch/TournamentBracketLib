@@ -44,6 +44,5 @@ public class MainActivity extends FragmentActivity {
         ColomnData finalColomn = new ColomnData(Arrays.asList(match3Final));
 
         bracketsView.setBracketsData(Arrays.asList(semiFinalColomn, finalColomn));
-        //Don't know why but when this line is uncommented it makes the program unable to launch on the phone
     }
 }
