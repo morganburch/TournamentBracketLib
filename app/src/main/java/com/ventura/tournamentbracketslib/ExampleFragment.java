@@ -27,9 +27,9 @@ public class ExampleFragment extends Fragment {
 
         // Call the function to set the brackets data
         //setBracketsDataPokemon(bracketsView);
-        //setBracketsDataResturant(bracketsView);
+        setBracketsDataResturant(bracketsView);
         //setBracketsDataSonnyAngels(bracketsView);
-        setBracketsDataTemplate(bracketsView);
+        //setBracketsDataTemplate(bracketsView);
 
     }
 
@@ -182,11 +182,21 @@ public class ExampleFragment extends Fragment {
         bracketsView.setBracketsData(Arrays.asList(FirstColomn,SecondColomn,ThirdColomn,FourthColomn));
     }
     private void setBracketsDataSonnyAngels(BracketsView bracketsView){
-        CompetitorData sonnyangel1 = new CompetitorData("name","?");
-        CompetitorData sonnyangel2 = new CompetitorData("name","?");
-        CompetitorData sonnyangel3 = new CompetitorData("name","?");
-        MatchData match1 = new MatchData(sonnyangel1,sonnyangel2);
-        ColomnData first = new ColomnData(Arrays.asList(match1));
+        CompetitorData sonnyAngel_round1 = new CompetitorData("Birthday Gift Bear Series","?");
+        CompetitorData sonnyAngel2_round1 = new CompetitorData("Flower gift Series","?");
+        CompetitorData sonnyAngel3_round1 = new CompetitorData("Animal Series","?");
+        CompetitorData sonnyAngel4_round1 = new CompetitorData("Hippers Series","?");
+        CompetitorData sonnyAngel5_round1 = new CompetitorData("Wonderland Series","?");
+        CompetitorData sonnyAngel6_round1 = new CompetitorData("Winter Wonderland Series","?");
+        CompetitorData sonnyAngel7_round1 = new CompetitorData("Gifts of Love Series","?");
+        CompetitorData sonnyAngel8_round1 = new CompetitorData("Creatures Series","?");
+
+        MatchData match1 = new MatchData(sonnyAngel_round1,sonnyAngel2_round1);
+        MatchData match2 = new MatchData(sonnyAngel3_round1,sonnyAngel4_round1);
+        MatchData match3 = new MatchData(sonnyAngel5_round1,sonnyAngel6_round1);
+        MatchData match4 = new MatchData(sonnyAngel7_round1,sonnyAngel8_round1);
+
+        ColomnData first = new ColomnData(Arrays.asList(match1,match2,match3,match4));
         bracketsView.setBracketsData(Arrays.asList(first));
     }
     private void setBracketsDataSports(BracketsView bracketsView){
